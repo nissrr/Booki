@@ -1,0 +1,114 @@
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('polices/raleway-regular-webfont.woff2') format('woff2'),
+         url('polices/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+    font-family: 'ralewayregular';
+}
+
+.bloc_page
+{
+    width: 900px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+
+/* HEADER -- EN TËTE DE LA PAGE */
+
+header
+{
+    display: flex;
+    
+}
+
+header img
+{
+    width: 10%;
+    height: 10%;
+    margin-top: 4%;
+    margin-left: 1.5%;
+}
+
+header a
+{
+    text-decoration: none;
+    color: #0065FC;
+}
+
+.hb
+{
+    
+    padding-left: 70%;
+    padding-top: 3.5%;
+    
+}
+
+header a:hover
+{
+    border-top: 1px solid;
+    color: #0065FC;
+    padding-top: 45px;
+    
+    
+}
+
+.ac
+{
+    padding-left: 7%;
+    padding-top: 3.5%;
+    font-size: 16px;
+}
+
+/* SECTION RECHERCHE */
+
+section h1
+{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 7px;
+}
+
+.fa-solid
+{
+    
+    padding-top: 14.5px;
+    padding-bottom: 19.5px;
+    padding-right: 18px;
+    padding-left: 18px;
+    margin-right: -4px;
+    background-color: #EFEFEF;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-size: 18px;
+    
+}
+
+.formulaire
+{
+    position: relative;
+    
+    
+}
+
+.rechercher
+{
+    position: absolute
+    
+    
+}
+
+
+
+
+
