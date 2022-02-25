@@ -94,20 +94,17 @@ section h1
     
 }
 
-.formulaire
+.bouton_rechercher
 {
-    position: relative;
-    
-    
+    background-color: #0065FC;
+    color: white;
+    font-weight: bolder;
+    padding-top: 17.5px;
+    margin-left: -5px;
+    padding-bottom: 14px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
-
-.rechercher
-{
-    position: absolute
-    
-    
-}
-
 
 
 
