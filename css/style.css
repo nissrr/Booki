@@ -2,12 +2,21 @@
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('polices/raleway-regular-webfont.woff2') format('woff2'),
-         url('polices/raleway-regular-webfont.woff') format('woff');
+    src: url('polices/raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('polices/raleway/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('polices/ralewaysemibold/raleway-semibold-webfont.woff2') format('woff2'),
+         url('polices/ralewaysemibold/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 body
 {
@@ -48,7 +57,7 @@ header a
 .hb
 {
     
-    padding-left: 70%;
+    padding-left: 90%;
     padding-top: 3.5%;
     
 }
@@ -77,6 +86,7 @@ section h1
     font-size: 20px;
     text-align: left;
     padding-top: 7px;
+    font-family: 'ralewaysemibold';
 }
 
 #logo_localisation
@@ -102,9 +112,12 @@ section h1
     padding-top: 17.5px;
     margin-left: -5px;
     padding-bottom: 16px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     border-style: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
 }
 
 #recherche2
@@ -113,51 +126,81 @@ section h1
     padding-left: 15px;
 }
 
+.formulaire
+{
+    font-family: 'ralewaysemibold';
+}
+
 .filtre
 {
     display: flex;
     justify-content: space-between;
     font-weight: bolder;
     padding-top: 30px;
+    position: relative;
+    font-family: 'ralewaysemibold';
     
 }
 
-#animal_icon , #romantique_icon , #familial_icon , #eco_icon
+#animal_icon 
 {
     border: 1px solid #EFEFEF;
     padding-top: 13px;
-    padding-right: 16px;
+    padding-right: 14px;
     background-color: #DEEBFF;
     border-radius: 80px;
-    padding-left: 16px;
-    height: 20px;
+    padding-left: 14px;
+    height: 16px;
     margin-top: 8px;
     padding-bottom: 14px;
     color: #0065FC;
+    position: relative;    
+    right: 23px;
+    bottom: 10px;
+    
 }
 
 .eco
 {
     display: flex;
-    border: 1px solid black;
+    border: 2px solid #DCDCDC;
     border-radius: 50px;
-    width: 140px;
+    width: 160px;
     height: 40px;
     padding-left: 20px;
-    padding-bottom: 5px;
 }
 
 #eco_icon
 {
-    vertical-align: baseline;
+    border: 1px solid #EFEFEF;
+    padding-top: 13px;
+    padding-right: 14px;
+    background-color: #DEEBFF;
+    border-radius: 80px;
+    padding-left: 14px;
+    height: 16px;
+    margin-top: 8px;
+    padding-bottom: 14px;
+    color: #0065FC;
+    position: relative;    
+    right: 23px;
+    bottom: 10px;
+}
+
+#ecop 
+{
+    font-style: bolder;
+    position: relative;
+    right: 10px ;
+    bottom: 3px;
 }
 
 .familial
 {
     display: flex;
-    border: 1px solid black;
+    border: 2px solid #DCDCDC;
     border-radius: 50px;
-    width: 140px;
+    width: 120px;
     height: 40px;
     padding-left: 20px;
 
@@ -165,15 +208,35 @@ section h1
 
 #familial_icon
 {
+    border: 1px solid #EFEFEF;
+    padding-top: 13px;
+    padding-right: 14px;
+    background-color: #DEEBFF;
+    border-radius: 80px;
+    padding-left: 14px;
+    height: 16px;
+    margin-top: 8px;
+    padding-bottom: 14px;
+    color: #0065FC;
+    position: relative;    
+    right: 23px;
+    bottom: 10px;
+}
 
+#famip
+{
+    font-style: bolder;
+    position: relative;
+    right: 10px ;
+    bottom: 3px;
 }
 
 .romantique
 {
     display: flex;
-    border: 1px solid black;
+    border: 2px solid #DCDCDC;
     border-radius: 50px;
-    width: 140px;
+    width: 155px;
     height: 40px;
     padding-left: 20px;
 
@@ -181,15 +244,35 @@ section h1
 
 #romantique_icon
 {
+    border: 1px solid #EFEFEF;
+    padding-top: 13px;
+    padding-right: 14px;
+    background-color: #DEEBFF;
+    border-radius: 80px;
+    padding-left: 14px;
+    height: 16px;
+    margin-top: 8px;
+    padding-bottom: 14px;
+    color: #0065FC;
+    position: relative;    
+    right: 23px;
+    bottom: 10px;
+}
 
+#romp
+{
+    font-style: bolder;
+    position: relative;
+    right: 10px ;
+    bottom: 3px;
 }
 
 .animal
 {
     display: flex;
-    border: 1px solid black;
+    border: 2px solid #DCDCDC;
     border-radius: 50px;
-    width: 140px;
+    width: 220px;
     height: 40px;
     padding-left: 20px;
 
@@ -197,7 +280,27 @@ section h1
 
 .animal_icon
 {
+    border: 1px solid #EFEFEF;
+    padding-top: 13px;
+    padding-right: 14px;
+    background-color: #DEEBFF;
+    border-radius: 80px;
+    padding-left: 14px;
+    height: 16px;
+    margin-top: 8px;
+    padding-bottom: 14px;
+    color: #0065FC;
+    position: relative;    
+    right: 23px;
+    bottom: 10px;
+}
 
+#anip
+{
+    word-wrap:break-word;
+    position: relative;
+    bottom: 3px;
+    right: 5px;
 }
 
 
@@ -228,6 +331,371 @@ section h1
     padding-left: 16px;
     margin-top: 15px;
 }
+
+
+
+
+
+/* SECTION 2 */
+
+
+
+.Hebergements
+{
+    
+    background-color: #EFEFEF;
+    width: 63.5%;
+    height: 610px;
+    border-radius: 20px;
+    margin-left: 50px;
+    padding-left: 10px;
+}
+
+#titrearticle
+{
+    font-family: 'ralewaysemibold';
+    position: relative;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.hotels
+{
+    display: flex;
+}
+
+/*CANNEBIERE*/
+
+#titrearticle
+{
+    font-size: 20px;
+    position: relative;
+    right: 15px;
+    padding-bottom: 5px;
+}
+
+.Cannebière
+{
+    border: 5px solid white;
+    width: 230px;
+    height: 190px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+#titrecannebière
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 9px;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+#prixnuit
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 19px;
+    padding-left: 7px;
+}
+.Cannebière img
+{
+    width: 230px;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.note
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 24px;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+#note1
+{
+    color: #DCDCDC;
+}
+
+/* HOTEL PORT */ 
+
+.hotelport
+{
+    border: 5px solid white;
+    width: 230px;
+    height: 190px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+#titreport
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 9px;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+#prixnuitport
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 19px;
+    padding-left: 7px;
+}
+.hotelport img
+{
+    width: 230px;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.noteport
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 24px;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+/* HOTEL LES MOUETTES */ 
+
+.lesmouettes
+{
+    border: 5px solid white;
+    width: 230px;
+    height: 190px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+#titremouettes
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 9px;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+#prixnuitmouettes
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 19px;
+    padding-left: 7px;
+}
+.lesmouettes img
+{
+    width: 230px;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.notemouettes
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 24px;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+#notemouettes1
+{
+    color: #DCDCDC;
+    
+}
+
+.hotels2
+{
+    display: flex;
+}
+
+/* HOTEL DE LA MER */ 
+
+.hotelmer
+{
+    border: 5px solid white;
+    width: 230px;
+    height: 190px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+#titremer
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 9px;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+#prixnuitmer
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 19px;
+    padding-left: 7px;
+}
+.hotelmer img
+{
+    width: 230px;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.notemer
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 24px;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+#notemer1, #notemer2
+{
+    color: #DCDCDC;
+    
+}
+
+/* AUBERGE LE PANIER */ 
+
+.lepanier
+{
+    border: 5px solid white;
+    width: 230px;
+    height: 190px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+#titrepanier
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 9px;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+#prixnuitpanier
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 19px;
+    padding-left: 7px;
+}
+.lepanier img
+{
+    width: 230px;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.notepanier
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 24px;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+#notepanier1
+{
+    color: #DCDCDC;
+    
+}
+
+/* HOTEL CHEZ AMINA */ 
+
+.chezamina
+{
+    border: 5px solid white;
+    width: 230px;
+    height: 190px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+#titreamina
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 9px;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+#prixnuitamina
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 19px;
+    padding-left: 7px;
+}
+.chezamina img
+{
+    width: 230px;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.noteamina
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 24px;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+.afficherplus
+{
+    font-family: 'ralewaysemibold';
+    padding-left: 22px;
+    padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
