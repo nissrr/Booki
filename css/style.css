@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'ralewayregular';
     src: url('polices/raleway/raleway-regular-webfont.woff2') format('woff2'),
-         url('polices/raleway/raleway-regular-webfont.woff') format('woff');
+        url('polices/raleway/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'ralewaysemibold';
     src: url('polices/ralewaysemibold/raleway-semibold-webfont.woff2') format('woff2'),
-         url('polices/ralewaysemibold/raleway-semibold-webfont.woff') format('woff');
+        url('polices/ralewaysemibold/raleway-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -57,16 +57,16 @@ header a
 .hb
 {
     
-    padding-left: 90%;
+    padding-left: 930px;
     padding-top: 3.5%;
     
 }
 
 header a:hover
 {
-    border-top: 1px solid;
+    border-top: 2px solid;
     color: #0065FC;
-    padding-top: 45px;
+    padding-top: 44px;
     
     
 }
@@ -139,6 +139,8 @@ section h1
     padding-top: 30px;
     position: relative;
     font-family: 'ralewaysemibold';
+    margin-right: -50px;
+    
     
 }
 
@@ -168,6 +170,7 @@ section h1
     width: 160px;
     height: 40px;
     padding-left: 20px;
+    margin-left: -20px;
 }
 
 #eco_icon
@@ -203,6 +206,8 @@ section h1
     width: 120px;
     height: 40px;
     padding-left: 20px;
+    
+    
 
 }
 
@@ -338,16 +343,19 @@ section h1
 
 /* SECTION 2 */
 
-
+.sect2
+{
+    display: flex;
+}
 
 .Hebergements
 {
     
     background-color: #EFEFEF;
-    width: 63.5%;
+    width: 97%;
     height: 610px;
     border-radius: 20px;
-    margin-left: 50px;
+    margin-left: 53px;
     padding-left: 10px;
 }
 
@@ -680,6 +688,190 @@ section h1
     padding-top: 25px;
 }
 
+/* LES PLUS POPULAIRES */
+
+.lpp
+{
+    background-color: #EFEFEF;
+    margin-left: 70px;
+    width: 600px;
+    height: 610px;
+    margin-top: 17px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    
+}
+
+.titreaside
+{
+    font-family: 'ralewaysemibold';
+    padding-left: 40px;
+    padding-top: 17px;
+    font-size: 22px;
+    margin-bottom: -20px;
+    
+}
+
+#asidelogo
+{
+    position: relative;
+    bottom: 28px;
+    left: 350px;
+    font-size: 22px;
+}
+
+/* HOTEL LE SOLEIL DU MATIN */
+
+.lesoleil
+{
+    border: 5px solid white;
+    width: 330px;
+    height: 135px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+#titresoleil
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 140px;
+    font-size: 16px;
+    left: 160px;
+}
+
+#prixnuitsoleil
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 147px;
+    left: 160px;
+    font-size: 'ralewayregular';
+}
+.lesoleil img
+{
+    width: 140px;
+    height: 135px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.notesoleil
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 125px;
+    font-size: 12px;
+    left: 160px;
+}
+
+/* HOTEL AU COEUR DE L'EAU */
+
+.eau
+{
+    border: 5px solid white;
+    width: 330px;
+    height: 135px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+#titreeau
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 140px;
+    font-size: 16px;
+    left: 160px;
+}
+
+#prixnuiteau
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 147px;
+    left: 160px;
+    font-size: 'ralewayregular';
+}
+.eau img
+{
+    width: 140px;
+    height: 135px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.noteeau
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 125px;
+    font-size: 12px;
+    left: 160px;
+}
+
+#noteeau1
+{
+    color: #EFEFEF;
+}
+
+/* HOTEL BLEU ET BLANC */
+
+.toutbleu
+{
+    border: 5px solid white;
+    width: 330px;
+    height: 135px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+#titretoutbleu
+{
+    position: relative;
+    font-family: 'ralewaysemibold';
+    bottom: 140px;
+    font-size: 16px;
+    left: 160px;
+}
+
+#prixnuittoutbleu
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 147px;
+    left: 160px;
+    font-size: 'ralewayregular';
+}
+.toutbleu img
+{
+    width: 140px;
+    height: 135px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.notetoutbleu
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 125px;
+    font-size: 12px;
+    left: 160px;
+}
+
+#notetoutbleu1
+{
+    color: #EFEFEF;
+}
 
 
 
