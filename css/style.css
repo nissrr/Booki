@@ -21,6 +21,7 @@
 body
 {
     font-family: 'ralewayregular';
+    margin: 0;
     width: max-content;
 }
 
@@ -29,7 +30,7 @@ body
     margin-right: 50px;
     margin-left: 50px;    
     box-sizing: border-box;
-    width: auto;
+    
 }
 
 
@@ -49,12 +50,13 @@ img
     
 }
 
-.menu img
+#logobooki 
 {
-    width: 10%;
-    height: 10%;
-    margin-top: 4%;
-    margin-left: 1.5%;
+    width: 80px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 35px;
+
 }
 
 .menu a
@@ -72,11 +74,11 @@ nav
 
 
 
-.menu a:hover
+nav a:hover
 {
     border-top: 2px solid;
     color: #0065FC;
-    padding-top: 57px;
+    padding-top: 48px;
     
     
 }
@@ -150,9 +152,21 @@ section h1
     position: relative;
     font-family: 'ralewaysemibold';
     margin-right: -50px;
-    justify-content: left;
+    justify-content: space-around;
+    width: 900px;
     
     
+}
+
+.filtre a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.filtre a:hover
+{
+    color: #0065FC;
 }
 
 
@@ -205,8 +219,8 @@ section h1
 {
     font-style: bolder;
     position: relative;
-    right: 10px ;
-    bottom: 3px;
+    left: 35px ;
+    bottom: 58px;
 }
 
 .familial
@@ -243,8 +257,8 @@ section h1
 {
     font-style: bolder;
     position: relative;
-    right: 10px ;
-    bottom: 3px;
+    left: 33px;
+bottom: 58px;
 }
 
 .romantique
@@ -279,8 +293,8 @@ section h1
 {
     font-style: bolder;
     position: relative;
-    right: 10px ;
-    bottom: 3px;
+    left: 34px;
+    bottom: 58px;
 }
 
 .animal
@@ -315,8 +329,8 @@ section h1
 {
     word-wrap:break-word;
     position: relative;
-    bottom: 3px;
-    right: 5px;
+    bottom: 58px;
+left: 39px;
 }
 
 
@@ -1085,7 +1099,7 @@ section h1
     background-color: #EFEFEF;
     justify-content: space-around;
     padding-bottom: 30px;
-    width: 100%;
+
 }
 
 .footer h3
@@ -1107,7 +1121,10 @@ section h1
     color: black;
 }
 
-
+.apropos
+{
+    margin-left: -120px;
+}
 
 @media all and (max-width: 767px)
 {
@@ -1137,17 +1154,17 @@ section h1
         margin-bottom: -30px;
     }
 
-    .menu a:hover
-    {   
-        border-bottom: 2px solid;
-        color: #0065FC;
-        padding-bottom: 8px;
-    }
-
     #navigation
     {
         margin-left: -890px;
         padding-top: -310px;
+    }
+
+    .hb a:hover, .ac a:hover
+    {
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+        padding-bottom: 15px;
     }
 
     .titresect
@@ -1170,12 +1187,17 @@ section h1
         
     }
 
+    .bouton_rechercher p
+    {
+        display: none;
+    }
+
     .filtre
     {
         display: flex;
         flex-direction: column;
         margin-left: 15px;
-        width: max-content;
+        width: min-content;
     }
 
     .eco , .romantique , .animal , .familial
@@ -1184,14 +1206,14 @@ section h1
         margin-left: -18px;
     }
 
-    .filtre p
-    {
-        margin-left: -15px;
-    }
-
     .info
     {
         width: 350px;
+    }
+
+    .info p
+    {
+        padding-left: 0px;
     }
 
     .titreaside
@@ -1267,15 +1289,6 @@ section h1
     border-top-right-radius: 15px;
     }
     
-
-    {
-    width: 300px;
-    height: 70px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-left: -25px;
-    }
-
     .hotelport
     {
         margin-top: 22px;
@@ -1285,8 +1298,6 @@ section h1
     .footer
     {
         flex-direction:column;
-        text-align: left;
-        width: auto;
         padding-left: 23px;
         margin-bottom: -9px;
 
@@ -1309,6 +1320,11 @@ section h1
 .afficherplus
 {
     padding-left: 0px;
+}
+
+.apropos
+{
+    margin-left: 0px;
 }
 
 
