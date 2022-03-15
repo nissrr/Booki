@@ -1,188 +1,4 @@
-@media all and (max-width: 767px)
-{
-    body
-    {
-        width: auto;
-        margin-left: -20px
-    }
-
-    .menu
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .menu img
-    {
-        padding-left: 150px;
-        width: 150px;
-    }
-
-    .menu a:hover
-    {   
-        border-bottom: 2px solid;
-        color: #0065FC;
-        padding-bottom: 8px;
-    }
-
-    #navigation
-    {
-        margin-left: -890px;
-        padding-top: -310px;
-    }
-
-    .titresect
-    {
-        width: 300px;
-    }
-
-    .formulaire
-    {
-        width: 350px;
-    }
-
-    .bouton_rechercher
-    {
-        width: 50px;
-        border-bottom-left-radius: 15px;
-        border-top-left-radius: 15px;
-        position: relative;
-        left: -25px;
-        
-    }
-
-    .filtre
-    {
-        display: flex;
-        flex-direction: column;
-        margin-left: 15px;
-    }
-
-    .eco , .romantique , .animal , .familial
-    {
-        margin-bottom: 15px;
-        margin-left: -18px;
-    }
-
-    .filtre p
-    {
-        margin-left: -15px;
-    }
-
-    .info
-    {
-        width: 350px;
-    }
-
-    .titreaside
-    {
-        width: 240px;
-    }
-
-    #lpp1
-    {
-        margin-left: -35px;
-        width: 119%;
-        border-radius: 0px;
-    }
-
-    aside
-    {
-        width: 10px;
-    }
-
-    .sect2
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 300px;
-    }
-
-    .hotels, .hotels2
-    {
-        flex-direction: column;
-    }
-
-    #Hébergements
-    {   
-        background: none;
-        width: 113%;
-    }
-
-    #titrearticle
-    {
-        margin-left: -18px;
-    }
-
-    #titreactivite
-    {
-        padding-top: 900px;
-    }
-
-    .activites
-    {
-        flex-direction: column;
-        margin-left: -38px;
-    }
-
-    .vieuxport, .fort, .calanques, .frioul , .parc, .notredame
-    {
-    border-radius: 15px;
-    margin-left: 53px;
-    margin-bottom: 30px;
-    box-shadow: 1px 1px 15px #DCDCDC;
-    margin-top: 17px;
-    height: 170px;
-    width: 310px;
-    
-    
-    }
-
-    #vieuxportimg, #fortimg, #calanquesimg, #frioulimg, #parcimg, #notredameimg
-    {
-    width: 310px;
-    height: 115px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    }
-    
-    #cannebièreimg, #hotelmerimg, #lepanierimg, #chezaminaimg, #portimg, #lesmouettesimg, 
-    {
-    width: 310px;
-    height: 115px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-left: -25px;
-    }
-
-    .hotelport
-    {
-        margin-top: 22px;
-        margin-bottom: 22px;
-    }
-
-    .footer
-    {
-        flex-direction:column;
-        text-align: center;
-        width: auto;
-        margin-right: -36px;
-        margin-bottom: -8px;
-
-
-    }
-
-
-
-
-    
-
-
-
-    
-
-}
-
+@import url();
 
 @font-face 
 {
@@ -205,6 +21,7 @@
 body
 {
     font-family: 'ralewayregular';
+    width: max-content;
 }
 
 .bloc_page
@@ -333,7 +150,7 @@ section h1
     position: relative;
     font-family: 'ralewaysemibold';
     margin-right: -50px;
-    justify-content: space-between;
+    justify-content: left;
     
     
 }
@@ -365,7 +182,6 @@ section h1
     width: 160px;
     height: 40px;
     padding-left: 20px;
-    margin-left: -20px;
 }
 
 #eco_icon
@@ -547,7 +363,6 @@ section h1
 {
     
     background-color: #EFEFEF;
-    width: 97%;
     height: 610px;
     border-radius: 20px;
     padding-left: 10px;
@@ -1270,10 +1085,7 @@ section h1
     background-color: #EFEFEF;
     justify-content: space-around;
     padding-bottom: 30px;
-    margin-right: -105px;
-    margin-left: -9px;
-    margin-bottom: -7px;
-
+    width: 100%;
 }
 
 .footer h3
@@ -1293,11 +1105,224 @@ section h1
 {
     text-decoration: none;
     color: black;
-    
-
 }
 
 
+
+@media all and (max-width: 767px)
+{
+
+    .bloc_page
+    {
+        margin-right: 0px;
+        margin-left: 24px;
+    }
+
+    body
+    {
+        margin-left: 0px;
+
+    }
+
+    .menu
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu img
+    {
+        padding-left: 110px;
+        width: 110px;
+        margin-bottom: -30px;
+    }
+
+    .menu a:hover
+    {   
+        border-bottom: 2px solid;
+        color: #0065FC;
+        padding-bottom: 8px;
+    }
+
+    #navigation
+    {
+        margin-left: -890px;
+        padding-top: -310px;
+    }
+
+    .titresect
+    {
+        width: 300px;
+    }
+
+    .formulaire
+    {
+        width: 350px;
+    }
+
+    .bouton_rechercher
+    {
+        width: 50px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        position: relative;
+        left: -25px;
+        
+    }
+
+    .filtre
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        width: max-content;
+    }
+
+    .eco , .romantique , .animal , .familial
+    {
+        margin-bottom: 15px;
+        margin-left: -18px;
+    }
+
+    .filtre p
+    {
+        margin-left: -15px;
+    }
+
+    .info
+    {
+        width: 350px;
+    }
+
+    .titreaside
+    {
+        width: 240px;
+    }
+
+    #lpp1
+    {
+        margin-left: -45px;
+        border-radius: 0px;
+        padding-right: 17px;
+    }
+
+    aside
+    {
+        width: 10px;
+    }
+
+    .sect2
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 300px;
+    }
+
+    .hotels, .hotels2
+    {
+        flex-direction: column;
+    }
+
+    #Hébergements
+    {   
+        background: none;
+        width: 113%;
+        padding-right: 0px;
+    
+    }
+
+    #titrearticle
+    {
+        margin-left: -18px;
+    }
+
+    #titreactivite
+    {
+        padding-top: 750px;
+    }
+
+    .activites
+    {
+        flex-direction: column;
+        margin-left: -38px;
+    }
+
+    .vieuxport, .fort, .calanques, .frioul , .parc, .notredame
+    {
+    border-radius: 15px;
+    margin-left: 47px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 15px #DCDCDC;
+    margin-top: 17px;
+    height: 170px;
+    width: 310px;
+    
+    }
+
+    #vieuxportimg, #fortimg, #calanquesimg, #frioulimg, #parcimg, #notredameimg
+    {
+    width: 310px;
+    height: 115px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    }
+    
+
+    {
+    width: 300px;
+    height: 70px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: -25px;
+    }
+
+    .hotelport
+    {
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+
+    .footer
+    {
+        flex-direction:column;
+        text-align: left;
+        width: auto;
+        padding-left: 23px;
+        margin-bottom: -9px;
+
+    }
+
+    .Cannebière, .hotelmer, .hotelport, .lepanier, .lesmouettes, .chezamina
+{
+    box-shadow: 1px 1px 15px #DCDCDC;
+    width: 300px;
+    margin-left: -2px;
+    height: 175px;
+}
+
+#cannebièreimg, #hotelmerimg, #lepanierimg, #chezaminaimg, #portimg, #lesmouettesimg
+{
+    width: 300px;
+    height: 100px;
+}
+
+.afficherplus
+{
+    padding-left: 0px;
+}
+
+
+
+
+
+
+    
+
+
+
+    
+
+}
 
 
 
