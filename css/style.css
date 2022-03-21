@@ -1,4 +1,4 @@
-@import url();
+@import url('normalize.css');
 
 @font-face 
 {
@@ -17,22 +17,19 @@
     font-style: normal;
 }
 
+/******/
 
 body
 {
     font-family: 'ralewayregular';
-    margin: 0;
-    width: max-content;
 }
 
 .bloc_page
 {
     margin-right: 50px;
     margin-left: 50px;    
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
-
 
 img
 {
@@ -42,55 +39,50 @@ img
 
 
 
-/* HEADER -- EN TËTE DE LA PAGE */
+/* ----- HEADER -----  */
 
-.menu
+/*NAVIGATION*/
+
+.navigation
 {
     display: flex;
-    
+    justify-content: space-between;  
 }
 
-#logobooki 
+.navigation img
 {
-    width: 80px;
-    height: 50px;
-    margin-left: 5px;
-    margin-top: 35px;
-
+    width: 90px;
+    height: 45px;
+    padding-top: 35px;
+    padding-left: 15px;
 }
 
-.menu a
+.navigation ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navigation li
+{
+    margin: 25px;
+}
+
+.navigation li a
 {
     text-decoration: none;
     color: black;
 }
 
-nav
+.navigation li a:hover
 {
-    display: flex;
-    margin-top: 35px;
-    padding-left: 930px;
-}
-
-
-
-nav a:hover
-{
-    border-top: 2px solid;
     color: #0065FC;
-    padding-top: 48px;
-    
-    
+    border-top: 2px solid #0065FC;
+    padding-top: 37px;
 }
 
-.ac
-{
-    padding-left: 50px;
-}
-
-/* SECTION RECHERCHE */
-
-section h1
+.titresect h1
 {
     font-weight: bolder;
     font-size: 20px;
@@ -98,6 +90,8 @@ section h1
     padding-top: 7px;
     font-family: 'ralewaysemibold';
 }
+
+/* FORMULAIRE */ 
 
 #logo_localisation
 {
@@ -144,6 +138,8 @@ section h1
     font-family: 'ralewaysemibold';
 }
 
+/* FILTRES */
+
 .filtre
 {
     display: flex;
@@ -152,10 +148,53 @@ section h1
     position: relative;
     font-family: 'ralewaysemibold';
     margin-right: -50px;
-    justify-content: space-around;
-    width: 900px;
-    
-    
+}
+
+.filtre h2
+{
+    font-size: 17px;
+    font-family: 'ralewaysemibold';
+}
+
+.filtre1
+{
+    display: flex;
+    border: 2px solid #DCDCDC;
+    border-radius: 50px;
+    width: 160px;
+    height: 40px;
+    padding-left: 20px;
+    margin-left: 15px;
+}
+
+.filtre1 i
+{
+    border: 1px solid #EFEFEF;
+    padding-top: 13px;
+    padding-right: 14px;
+    background-color: #DEEBFF;
+    border-radius: 80px;
+    padding-left: 14px;
+    height: 16px;
+    margin-top: 8px;
+    padding-bottom: 14px;
+    color: #0065FC;
+    position: relative;    
+    right: 23px;
+    bottom: 10px;
+}
+
+.filtre1 p
+{
+    font-style: bolder;
+    position: relative;
+    left: 35px ;
+    bottom: 58px;
+}
+
+.width
+{
+    width: 200px;
 }
 
 .filtre a
@@ -168,173 +207,6 @@ section h1
 {
     color: #0065FC;
 }
-
-
-#animal_icon 
-{
-    border: 1px solid #EFEFEF;
-    padding-top: 13px;
-    padding-right: 14px;
-    background-color: #DEEBFF;
-    border-radius: 80px;
-    padding-left: 14px;
-    height: 16px;
-    margin-top: 8px;
-    padding-bottom: 14px;
-    color: #0065FC;
-    position: relative;    
-    right: 23px;
-    bottom: 10px;
-    
-}
-
-.eco
-{
-    display: flex;
-    border: 2px solid #DCDCDC;
-    border-radius: 50px;
-    width: 160px;
-    height: 40px;
-    padding-left: 20px;
-}
-
-#eco_icon
-{
-    border: 1px solid #EFEFEF;
-    padding-top: 13px;
-    padding-right: 14px;
-    background-color: #DEEBFF;
-    border-radius: 80px;
-    padding-left: 14px;
-    height: 16px;
-    margin-top: 8px;
-    padding-bottom: 14px;
-    color: #0065FC;
-    position: relative;    
-    right: 23px;
-    bottom: 10px;
-}
-
-#ecop 
-{
-    font-style: bolder;
-    position: relative;
-    left: 35px ;
-    bottom: 58px;
-}
-
-.familial
-{
-    display: flex;
-    border: 2px solid #DCDCDC;
-    border-radius: 50px;
-    width: 120px;
-    height: 40px;
-    padding-left: 20px;
-    
-    
-
-}
-
-#familial_icon
-{
-    border: 1px solid #EFEFEF;
-    padding-top: 13px;
-    padding-right: 14px;
-    background-color: #DEEBFF;
-    border-radius: 80px;
-    padding-left: 14px;
-    height: 16px;
-    margin-top: 8px;
-    padding-bottom: 14px;
-    color: #0065FC;
-    position: relative;    
-    right: 23px;
-    bottom: 10px;
-}
-
-#famip
-{
-    font-style: bolder;
-    position: relative;
-    left: 33px;
-bottom: 58px;
-}
-
-.romantique
-{
-    display: flex;
-    border: 2px solid #DCDCDC;
-    border-radius: 50px;
-    width: 155px;
-    height: 40px;
-    padding-left: 20px;
-
-}
-
-#romantique_icon
-{
-    border: 1px solid #EFEFEF;
-    padding-top: 13px;
-    padding-right: 14px;
-    background-color: #DEEBFF;
-    border-radius: 80px;
-    padding-left: 14px;
-    height: 16px;
-    margin-top: 8px;
-    padding-bottom: 14px;
-    color: #0065FC;
-    position: relative;    
-    right: 23px;
-    bottom: 10px;
-}
-
-#romp
-{
-    font-style: bolder;
-    position: relative;
-    left: 34px;
-    bottom: 58px;
-}
-
-.animal
-{
-    display: flex;
-    border: 2px solid #DCDCDC;
-    border-radius: 50px;
-    width: 220px;
-    height: 40px;
-    padding-left: 20px;
-
-}
-
-.animal_icon
-{
-    border: 1px solid #EFEFEF;
-    padding-top: 13px;
-    padding-right: 14px;
-    background-color: #DEEBFF;
-    border-radius: 80px;
-    padding-left: 14px;
-    height: 16px;
-    margin-top: 8px;
-    padding-bottom: 14px;
-    color: #0065FC;
-    position: relative;    
-    right: 23px;
-    bottom: 10px;
-}
-
-#anip
-{
-    word-wrap:break-word;
-    position: relative;
-    bottom: 58px;
-left: 39px;
-}
-
-
-
 
 .info
 {
@@ -364,11 +236,17 @@ left: 39px;
 
 
 
+/* MAIN */
 
+/*------HEBERGEMENTS------*/
 
-/* SECTION 2 */
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.sect2
+.sect1
 {
     display: flex;
 }
@@ -377,350 +255,96 @@ left: 39px;
 {
     
     background-color: #EFEFEF;
-    height: 610px;
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 25px;
+    width: 59%;
+    height: 700px;
 }
 
-#titrearticle
+.Hebergements h2
 {
     font-family: 'ralewaysemibold';
-    position: relative;
-    padding-top: 40px;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 .hotels
 {
     display: flex;
+    height: 32%
 }
 
-/*CANNEBIERE*/
 
-#titrearticle
-{
-    font-size: 20px;
-    position: relative;
-    right: 15px;
-    padding-bottom: 5px;
-}
-
-.Cannebière
+.hotelcard
 {
     border: 5px solid white;
-    width: 230px;
-    height: 190px;
     background-color: white;
     border-radius: 15px;
     margin-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 30%;
 }
 
-#titrecannebière
+.hotelcard h2
 {
-    position: relative;
     font-family: 'ralewaysemibold';
-    bottom: 9px;
-    font-size: 15px;
+    font-size: 90%;
+    padding: 0;
     padding-left: 7px;
 }
 
-#prixnuit
+.hotelcard p
 {
-    font-size: 14px;
-    position: relative;
-    bottom: 19px;
+    font-size: 75%;
     padding-left: 7px;
+    margin-top: -10px;
 }
-.Cannebière img
+.hotelcard img
 {
-    width: 230px;
-    height: 110px;
+    width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    margin-bottom: -4px;
+    height: 60%;
 }
+
 
 .note
 {
     color: #0065FC;
-    position: relative;
-    bottom: 24px;
-    font-size: 12px;
+    font-size: 60%;
     padding-left: 7px;
-}
-
-#note1
-{
-    color: #DCDCDC;
-}
-
-/* HOTEL PORT */ 
-
-.hotelport
-{
-    border: 5px solid white;
-    width: 230px;
-    height: 190px;
-    background-color: white;
-    border-radius: 15px;
-    margin-left: 20px;
-}
-
-#titreport
-{
-    position: relative;
-    font-family: 'ralewaysemibold';
-    bottom: 9px;
-    font-size: 15px;
-    padding-left: 7px;
-}
-
-#prixnuitport
-{
-    font-size: 14px;
-    position: relative;
-    bottom: 19px;
-    padding-left: 7px;
-}
-.hotelport img
-{
-    width: 230px;
-    height: 110px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.noteport
-{
-    color: #0065FC;
-    position: relative;
-    bottom: 24px;
-    font-size: 12px;
-    padding-left: 7px;
-}
-
-/* HOTEL LES MOUETTES */ 
-
-.lesmouettes
-{
-    border: 5px solid white;
-    width: 230px;
-    height: 190px;
-    background-color: white;
-    border-radius: 15px;
-    margin-left: 20px;
-}
-
-#titremouettes
-{
-    position: relative;
-    font-family: 'ralewaysemibold';
-    bottom: 9px;
-    font-size: 15px;
-    padding-left: 7px;
-}
-
-#prixnuitmouettes
-{
-    font-size: 14px;
-    position: relative;
-    bottom: 19px;
-    padding-left: 7px;
-}
-.lesmouettes img
-{
-    width: 230px;
-    height: 110px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.notemouettes
-{
-    color: #0065FC;
-    position: relative;
-    bottom: 24px;
-    font-size: 12px;
-    padding-left: 7px;
-}
-
-#notemouettes1
-{
-    color: #DCDCDC;
-    
-}
+} 
 
 .hotels2
 {
     display: flex;
+    height: 32%;
 }
 
-/* HOTEL DE LA MER */ 
-
-.hotelmer
+.Hebergements a
 {
-    border: 5px solid white;
-    width: 230px;
-    height: 190px;
-    background-color: white;
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-top: 25px;
-}
-
-#titremer
-{
-    position: relative;
-    font-family: 'ralewaysemibold';
-    bottom: 9px;
-    font-size: 15px;
-    padding-left: 7px;
-}
-
-#prixnuitmer
-{
-    font-size: 14px;
-    position: relative;
-    bottom: 19px;
-    padding-left: 7px;
-}
-.hotelmer img
-{
-    width: 230px;
-    height: 110px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.notemer
-{
-    color: #0065FC;
-    position: relative;
-    bottom: 24px;
-    font-size: 12px;
-    padding-left: 7px;
-}
-
-#notemer1, #notemer2
-{
-    color: #DCDCDC;
-    
-}
-
-/* AUBERGE LE PANIER */ 
-
-.lepanier
-{
-    border: 5px solid white;
-    width: 230px;
-    height: 190px;
-    background-color: white;
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-top: 25px;
-}
-
-#titrepanier
-{
-    position: relative;
-    font-family: 'ralewaysemibold';
-    bottom: 9px;
-    font-size: 15px;
-    padding-left: 7px;
-}
-
-#prixnuitpanier
-{
-    font-size: 14px;
-    position: relative;
-    bottom: 19px;
-    padding-left: 7px;
-}
-.lepanier img
-{
-    width: 230px;
-    height: 110px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.notepanier
-{
-    color: #0065FC;
-    position: relative;
-    bottom: 24px;
-    font-size: 12px;
-    padding-left: 7px;
-}
-
-#notepanier1
-{
-    color: #DCDCDC;
-    
-}
-
-/* HOTEL CHEZ AMINA */ 
-
-.chezamina
-{
-    border: 5px solid white;
-    width: 230px;
-    height: 190px;
-    background-color: white;
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-top: 25px;
-}
-
-#titreamina
-{
-    position: relative;
-    font-family: 'ralewaysemibold';
-    bottom: 9px;
-    font-size: 15px;
-    padding-left: 7px;
-}
-
-#prixnuitamina
-{
-    font-size: 14px;
-    position: relative;
-    bottom: 19px;
-    padding-left: 7px;
-}
-.chezamina img
-{
-    width: 230px;
-    height: 110px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.noteamina
-{
-    color: #0065FC;
-    position: relative;
-    bottom: 24px;
-    font-size: 12px;
-    padding-left: 7px;
+    text-decoration: none;
+    color: black;
 }
 
 .afficherplus
 {
     font-family: 'ralewaysemibold';
     padding-left: 22px;
-    padding-top: 25px;
+    padding-top: 50px;
 }
 
-/* LES PLUS POPULAIRES */
+/*------LES PLUS POPULAIRES------*/
 
 .lpp
 {
     background-color: #EFEFEF;
     margin-left: 40px;
-    width: 380px;
-    height: 610px;
-    margin-top: 17px;
+    width: 30%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -732,36 +356,37 @@ left: 39px;
 .titreaside
 {
     font-family: 'ralewaysemibold';
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+}
+
+.titreaside h2
+{
     padding-left: 40px;
-    padding-top: 17px;
-    font-size: 22px;
-    margin-bottom: -20px;
-    
+    padding-top: 16px;
+    font-size: 20px;
 }
 
 #asidelogo
 {
-    position: relative;
-    bottom: 28px;
-    font-size: 22px;
-    max-width: 20px;
-    padding-left: 310px;
+    padding-top: 32px;
+    font-size: 20px;
 }
 
-/* HOTEL LE SOLEIL DU MATIN */
-
-.lesoleil
+.hotelcard2
 {
     border: 5px solid white;
-    width: 330px;
+    width: 90%;
     height: 135px;
     background-color: white;
     border-radius: 15px;
-    margin-left: 40px;
-    margin-top: 10px;
+    margin-left: 9%;
+    margin-top: 6%;
+    margin-bottom: 5%;
 }
 
-#titresoleil
+.hotelcard2 h2
 {
     position: relative;
     font-family: 'ralewaysemibold';
@@ -770,7 +395,7 @@ left: 39px;
     padding-left: 160px;
 }
 
-#prixnuitsoleil
+.hotelcard2 p
 {
     font-size: 14px;
     position: relative;
@@ -778,7 +403,7 @@ left: 39px;
     padding-left: 160px;
     font-size: 'ralewayregular';
 }
-.lesoleil img
+.hotelcard2 img
 {
     width: 140px;
     height: 135px;
@@ -786,7 +411,7 @@ left: 39px;
     border-bottom-left-radius: 15px;
 }
 
-.notesoleil
+.note2
 {
     color: #0065FC;
     position: relative;
@@ -795,119 +420,30 @@ left: 39px;
     padding-left: 160px;
 }
 
-/* HOTEL AU COEUR DE L'EAU */
-
-.eau
+.hotelcard2 a
 {
-    border: 5px solid white;
-    width: 330px;
-    height: 135px;
-    background-color: white;
-    border-radius: 15px;
-    margin-left: 40px;
-    margin-top: 25px;
+    text-decoration: none;
+    color: black;
 }
 
-#titreeau
-{
-    position: relative;
-    font-family: 'ralewaysemibold';
-    bottom: 140px;
-    font-size: 16px;
-    padding-left: 160px;
-}
-
-#prixnuiteau
-{
-    font-size: 14px;
-    position: relative;
-    bottom: 147px;
-    padding-left: 160px;
-    font-size: 'ralewayregular';
-}
-.eau img
-{
-    width: 140px;
-    height: 135px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.noteeau
-{
-    color: #0065FC;
-    position: relative;
-    bottom: 125px;
-    font-size: 12px;
-    padding-left: 160px;
-}
-
-#noteeau1
+.stargrey
 {
     color: #EFEFEF;
 }
 
-/* HOTEL BLEU ET BLANC */
+/* SECTION 2 */ 
 
-.toutbleu
+/*-----ACTIVITES A MARSEILLE-----*/
+.act
 {
-    border: 5px solid white;
-    width: 330px;
-    height: 135px;
-    background-color: white;
-    border-radius: 15px;
-    margin-left: 40px;
-    margin-top: 25px;
-    box-shadow: 1px 1px 15px #DCDCDC;
+    height: max-content;
 }
-
-#titretoutbleu
-{
-    position: relative;
-    font-family: 'ralewaysemibold';
-    bottom: 140px;
-    font-size: 16px;
-    padding-left: 160px;
-}
-
-#prixnuittoutbleu
-{
-    font-size: 14px;
-    position: relative;
-    bottom: 147px;
-    padding-left: 160px;
-    font-size: 'ralewayregular';
-}
-.toutbleu img
-{
-    width: 140px;
-    height: 135px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.notetoutbleu
-{
-    color: #0065FC;
-    position: relative;
-    bottom: 125px;
-    font-size: 12px;
-    padding-left: 160px;
-}
-
-#notetoutbleu1
-{
-    color: #EFEFEF;
-}
-
-/* ACTIVITES A MARSEILLE */
-
 .activites
 {
     display: flex;
 }
 
-#titreactivite
+.act h2
 {
     font-family: 'ralewaysemibold';
     font-size: 20px;
@@ -921,12 +457,13 @@ left: 39px;
     border-radius: 15px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC; 
+    width: 25%;
 }
 
 .vieuxport img
 {
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 86%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     
@@ -943,6 +480,7 @@ left: 39px;
 {
     display: flex;
     flex-direction: column;
+    width: 25%;
 }
 
 /* FORT DE POMEGUES */
@@ -950,7 +488,7 @@ left: 39px;
 .fort
 {
     border-radius: 15px;
-    margin-left: 53px;
+    margin-left: 33px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC;
     
@@ -958,8 +496,8 @@ left: 39px;
 
 .fort img
 {
-    width: 280px;
-    height: 180px;
+    width: 100%;
+    height: 145px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -976,17 +514,17 @@ left: 39px;
 .frioul
 {
     border-radius: 15px;
-    margin-left: 53px;
+    margin-left: 33px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC;
-    margin-top: 17px
+    margin-top: 17px;
     
 }
 
 .frioul img
 {
-    width: 280px;
-    height: 120px;
+    width: 100%;
+    height: 90px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -1003,16 +541,18 @@ left: 39px;
 .calanques
 {
     border-radius: 15px;
-    margin-left: 53px;
+    margin-left: 33px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC;
+    width: 25%;
+
     
 }
 
 .calanques img
 {
-    width: 280px;
-    height: 400px;
+    width: 100%;
+    height: 86%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -1028,24 +568,24 @@ left: 39px;
 {
     display: flex;
     flex-direction: column;
+    width: 22%;
 }
 
-/* FORT DE POMEGUES */
+/* Notre dame de la garde */
 
 .notredame
 {
     border-radius: 15px;
-    margin-left: 53px;
-    margin-right: 20px;
-    margin-bottom: 30px;
+    margin-left: 33px;
+    margin-bottom: 42px;
     box-shadow: 1px 1px 15px #DCDCDC;
     
 }
 
 .notredame img
 {
-    width: 280px;
-    height: 130px;
+    width: 100%;
+    height: 115px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -1057,23 +597,21 @@ left: 39px;
     font-size: 16px;
 }
 
-/* Frioul */
+/* Parc longchamp */
 
 .parc
 {
     border-radius: 15px;
-    margin-left: 53px;
+    margin-left: 33px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC;
-    margin-top: 37px;
-    margin-right: 20px;
     
 }
 
 .parc img
 {
-    width: 280px;
-    height: 150px;
+    width: 100%;
+    height: 125px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -1126,6 +664,15 @@ left: 39px;
     margin-left: -120px;
 }
 
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 767px)
 {
 
@@ -1141,26 +688,29 @@ left: 39px;
 
     }
 
-    .menu
+    /*HEADER*/
+
+    .navigation
     {
         display: flex;
         flex-direction: column;
     }
 
-    .menu img
+    .navigation img
     {
         padding-left: 110px;
         width: 110px;
         margin-bottom: -30px;
     }
 
-    #navigation
+
+    .navigation li
     {
-        margin-left: -890px;
-        padding-top: -310px;
+        width: 100%;
+        margin-left: -1px;
     }
 
-    .hb a:hover, .ac a:hover
+    .navigation li a:hover
     {
         border-bottom: 2px solid #0065FC;
         border-top: none;
@@ -1216,6 +766,15 @@ left: 39px;
         padding-left: 0px;
     }
 
+    /* SECTION 1 */
+
+    .sect1
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
     .titreaside
     {
         width: 240px;
@@ -1223,21 +782,14 @@ left: 39px;
 
     #lpp1
     {
-        margin-left: -45px;
+        margin-left: -37px;
         border-radius: 0px;
-        padding-right: 17px;
+        width: 100%;
     }
 
     aside
     {
         width: 10px;
-    }
-
-    .sect2
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 300px;
     }
 
     .hotels, .hotels2
@@ -1248,20 +800,38 @@ left: 39px;
     #Hébergements
     {   
         background: none;
-        width: 113%;
         padding-right: 0px;
+        margin-left: -21px;  
+        width: 100%;
+        height: 100%;
+    }
+
+    #titlehebergement
+    {
+        padding-left: 25px;
+    }
+
+    .hotelcard
+    {
+        box-shadow: 1px 1px 15px #DCDCDC;
+        width: 300px;
+        height: 175px;
+        margin-bottom: 25px;
+    }
     
+    .hotelcard img
+    {
+        width: 300px;
+        height: 100px;
     }
 
-    #titrearticle
-    {
-        margin-left: -18px;
-    }
+    .afficherplus
+{
+    padding
+}
 
-    #titreactivite
-    {
-        padding-top: 750px;
-    }
+
+    /* SECTION 2 */
 
     .activites
     {
@@ -1273,7 +843,7 @@ left: 39px;
     {
     border-radius: 15px;
     margin-left: 47px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     box-shadow: 1px 1px 15px #DCDCDC;
     margin-top: 17px;
     height: 170px;
@@ -1281,18 +851,12 @@ left: 39px;
     
     }
 
-    #vieuxportimg, #fortimg, #calanquesimg, #frioulimg, #parcimg, #notredameimg
+    .activites img, .activites2 img, .activites3 img
     {
     width: 310px;
     height: 115px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    }
-    
-    .hotelport
-    {
-        margin-top: 22px;
-        margin-bottom: 22px;
     }
 
     .footer
@@ -1300,27 +864,9 @@ left: 39px;
         flex-direction:column;
         padding-left: 23px;
         margin-bottom: -9px;
+        margin-top: 20px;
 
     }
-
-    .Cannebière, .hotelmer, .hotelport, .lepanier, .lesmouettes, .chezamina
-{
-    box-shadow: 1px 1px 15px #DCDCDC;
-    width: 300px;
-    margin-left: -2px;
-    height: 175px;
-}
-
-#cannebièreimg, #hotelmerimg, #lepanierimg, #chezaminaimg, #portimg, #lesmouettesimg
-{
-    width: 300px;
-    height: 100px;
-}
-
-.afficherplus
-{
-    padding-left: 0px;
-}
 
 .apropos
 {
