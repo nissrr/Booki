@@ -948,6 +948,7 @@ main
         display: flex;
         flex-direction: column-reverse;
         height: 100%;
+        align-items: center;
     }
 
     #lpp1
@@ -966,12 +967,12 @@ main
     .hotels, .hotels2
     {
         flex-direction: column;
+        align-items: center;
     }
 
     #Hébergements
     {   
         background: none;
-        padding-right: 0px;
         margin-left: -23px;  
         width: 100%;
         height: 100%;
@@ -983,7 +984,6 @@ main
         box-shadow: 1px 1px 15px #DCDCDC;
         width: 300px;
         height: 175px;
-        margin-left: 21px;
     }
     
     .hotelcard img
