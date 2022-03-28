@@ -78,7 +78,7 @@ img
 .navigation li a:hover
 {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
     padding-top: 37px;
 }
 
@@ -96,15 +96,12 @@ img
 #logo_localisation
 {
     
-    padding-top: 15.5px;
-    padding-bottom: 18.5px;
-    padding-right: 18px;
-    padding-left: 18px;
+    padding: 17px;
     margin-right: -4px;
     background-color: #EFEFEF;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    font-size: 18px;
+    font-size: 17px;
     
 }
 
@@ -113,9 +110,9 @@ img
     background-color: #0065FC;
     color: white;
     font-weight: bolder;
-    padding-top: 17.5px;
+    padding-top: 17px;
     margin-left: -5px;
-    padding-bottom: 16px;
+    padding-bottom: 15.5px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-style: hidden;
@@ -123,6 +120,12 @@ img
     padding-right: 25px;
     font-size: 16px;
 }
+
+#loupe
+{
+    display: none;
+}
+
 
 #recherche2
 {
@@ -148,6 +151,12 @@ img
     position: relative;
     font-family: 'ralewaysemibold';
     margin-right: -50px;
+}
+
+.filtrereponsive
+{
+    display: flex;
+    flex-direction: row;
 }
 
 .filtre h2
@@ -186,7 +195,6 @@ img
 
 .filtre1 p
 {
-    font-style: bolder;
     position: relative;
     left: 35px ;
     bottom: 58px;
@@ -249,6 +257,8 @@ main
 .sect1
 {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .Hebergements
@@ -257,32 +267,37 @@ main
     background-color: #EFEFEF;
     border-radius: 20px;
     padding-left: 10px;
-    padding-right: 25px;
+    padding-right: 11px;
     width: 59%;
     height: 700px;
+}
+
+.Hebergements a
+{
+    text-decoration: none;
+    color: black;
 }
 
 .Hebergements h2
 {
     font-family: 'ralewaysemibold';
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 2%;
+    padding-top: 4%;
     font-size: 20px;
 }
 
 .hotels
 {
     display: flex;
-    height: 32%
+    height: 32%;
+    justify-content: space-around;
 }
-
 
 .hotelcard
 {
     border: 5px solid white;
     background-color: white;
     border-radius: 15px;
-    margin-left: 20px;
     margin-bottom: 15px;
     margin-top: 15px;
     width: 30%;
@@ -311,7 +326,6 @@ main
     height: 60%;
 }
 
-
 .note
 {
     color: #0065FC;
@@ -323,19 +337,14 @@ main
 {
     display: flex;
     height: 32%;
-}
-
-.Hebergements a
-{
-    text-decoration: none;
-    color: black;
+    justify-content: space-around;
 }
 
 .afficherplus
 {
     font-family: 'ralewaysemibold';
-    padding-left: 22px;
-    padding-top: 50px;
+    padding-left: 3%;
+    padding-top: 8%;
 }
 
 /*------LES PLUS POPULAIRES------*/
@@ -343,12 +352,12 @@ main
 .lpp
 {
     background-color: #EFEFEF;
-    margin-left: 40px;
     width: 30%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    padding-right: 50px;
+    padding-right: 42px;
+    justify-content: space-around;
 
     
 }
@@ -358,19 +367,17 @@ main
     font-family: 'ralewaysemibold';
     display: flex;
     flex-direction: row;   
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .titreaside h2
 {
-    padding-left: 40px;
-    padding-top: 16px;
     font-size: 20px;
 }
 
 #asidelogo
 {
-    padding-top: 32px;
+    padding-top: 16px;
     font-size: 20px;
 }
 
@@ -382,8 +389,12 @@ main
     background-color: white;
     border-radius: 15px;
     margin-left: 9%;
-    margin-top: 6%;
-    margin-bottom: 5%;
+}
+
+.hotelcard2 a
+{
+    text-decoration: none;
+    color: black;
 }
 
 .hotelcard2 h2
@@ -401,7 +412,6 @@ main
     position: relative;
     bottom: 147px;
     padding-left: 160px;
-    font-size: 'ralewayregular';
 }
 .hotelcard2 img
 {
@@ -420,27 +430,30 @@ main
     padding-left: 160px;
 }
 
-.hotelcard2 a
-{
-    text-decoration: none;
-    color: black;
-}
-
 .stargrey
 {
     color: #EFEFEF;
 }
 
+
+
+
+
+
 /* SECTION 2 */ 
 
 /*-----ACTIVITES A MARSEILLE-----*/
+
 .act
 {
-    height: max-content;
+    width: 100%;
 }
+
 .activites
 {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
 }
 
 .act h2
@@ -452,15 +465,14 @@ main
 
 /* VIEUX PORT */
 
-.vieuxport
+.vieuxport, .calanques
 {
     border-radius: 15px;
-    margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC; 
     width: 25%;
 }
 
-.vieuxport img
+.vieuxport img, .calanques img
 {
     width: 100%;
     height: 86%;
@@ -469,7 +481,7 @@ main
     
 }
 
-.vieuxport p
+.vieuxport p, .calanques p
 {
     font-family: 'ralewaysemibold';
     margin-left: 20px;
@@ -481,6 +493,7 @@ main
     display: flex;
     flex-direction: column;
     width: 25%;
+    justify-content: space-between;
 }
 
 /* FORT DE POMEGUES */
@@ -488,8 +501,6 @@ main
 .fort
 {
     border-radius: 15px;
-    margin-left: 33px;
-    margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC;
     
 }
@@ -497,7 +508,7 @@ main
 .fort img
 {
     width: 100%;
-    height: 145px;
+    height: 125px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -514,10 +525,7 @@ main
 .frioul
 {
     border-radius: 15px;
-    margin-left: 33px;
-    margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC;
-    margin-top: 17px;
     
 }
 
@@ -541,8 +549,6 @@ main
 .calanques
 {
     border-radius: 15px;
-    margin-left: 33px;
-    margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC;
     width: 25%;
 
@@ -569,6 +575,7 @@ main
     display: flex;
     flex-direction: column;
     width: 22%;
+    justify-content: space-between;
 }
 
 /* Notre dame de la garde */
@@ -576,9 +583,8 @@ main
 .notredame
 {
     border-radius: 15px;
-    margin-left: 33px;
-    margin-bottom: 42px;
     box-shadow: 1px 1px 15px #DCDCDC;
+    margin-bottom: 4%;
     
 }
 
@@ -602,8 +608,6 @@ main
 .parc
 {
     border-radius: 15px;
-    margin-left: 33px;
-    margin-bottom: 30px;
     box-shadow: 1px 1px 15px #DCDCDC;
     
 }
@@ -611,7 +615,7 @@ main
 .parc img
 {
     width: 100%;
-    height: 125px;
+    height: 110px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -629,7 +633,10 @@ main
     color: black;
 }
 
-/* FOOTER */
+
+
+
+/* ----- FOOTER ----- */
 
 .footer
 {
@@ -650,7 +657,6 @@ main
 .footer p
 {
     font-size: 16px;
-
 }
 
 .footer a
@@ -670,16 +676,160 @@ main
 
 
 
+@media all and (min-width : 768px) and (max-width : 991px) /* TABLETTES */
+{
+
+
+    .filtre
+    {
+        flex-direction: column;
+    }
+
+    .filtre h2 
+    {
+        padding-left: 20px;
+    }
+
+    .filtre1
+    {
+        margin-bottom: 10px;
+    }
+
+    .sect1
+    {
+        display: block;
+    }
+
+    #Hébergements
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .lpp
+    {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .hotelcard2 p 
+    {
+        padding-left: 390px;
+    }
+
+    .hotelcard2 h2
+    {
+        padding-left: 390px;
+    }
+
+    .hotelcard2 img
+    {
+        width: 50%;
+    }
+
+    .hotelcard2
+    {
+        margin-left: 4%;
+        margin-bottom: 3%;
+
+    }
+
+    .note2
+    {
+        padding-left: 390px;
+    }
+
+    .activites
+    {
+        flex-direction: column;
+    }
+
+    .act
+    {
+        width: 100%;
+    }
+
+    .vieuxport
+    {
+
+        width: 100%;
+        height: 340px;
+        margin-bottom: 4%;
+    }
+    
+    .activites2
+    {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 30px;
+    }   
+
+    .fort
+    {
+
+        width: 40%;
+        margin: 0;    
+    }
+
+    .frioul
+    {
+        width: 45%;
+    }
+
+    .frioul img
+    {
+        height: 120px;
+    }
+
+
+    .calanques
+
+    {
+        width: 100%;
+        height: 340px;
+        margin: 0;
+    }
+
+    .activites3
+    {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 30px;
+    }   
+
+    .notredame
+    {
+        margin-left: 0;
+        width: 45%;
+    }
+
+    .parc
+    {
+        width: 40%;
+        height: 170px;
+    }
 
 
 
-@media all and (max-width: 767px)
+    .apropos
+    {
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) /* TELEPHONE PORTABLE */
 {
 
     .bloc_page
     {
         margin-right: 0px;
-        margin-left: 24px;
+        margin-left: 22px;
     }
 
     body
@@ -704,17 +854,24 @@ main
     }
 
 
-    .navigation li
+    .navigation li 
     {
         width: 100%;
-        margin-left: -1px;
+        margin-bottom: -7px;
     }
 
     .navigation li a:hover
     {
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
         border-top: none;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
+    }
+
+    .navigation ul
+    {
+        border-bottom: 3px solid #EFEFEF;
+        padding-bottom: 17px;
+        margin-left: -22px;
     }
 
     .titresect
@@ -724,41 +881,59 @@ main
 
     .formulaire
     {
-        width: 350px;
+        margin-bottom: -70px;
+        margin-top: 25px;
     }
 
     .bouton_rechercher
     {
-        width: 50px;
-        border-bottom-left-radius: 15px;
-        border-top-left-radius: 15px;
-        position: relative;
-        left: -25px;
-        
+        display: none;
     }
 
-    .bouton_rechercher p
+    #loupe
     {
-        display: none;
+        display: flex;
+        background-color: #0065FC;
+        color: white;
+        width: min-content;
+        position: relative;
+        left: 260px;
+        bottom: 52px;
+        font-size: 17px;
+        padding: 17px;
+        border-radius: 15px;
     }
 
     .filtre
     {
-        display: flex;
         flex-direction: column;
-        margin-left: 15px;
-        width: min-content;
+        width: 100%;
     }
 
-    .eco , .romantique , .animal , .familial
+    .filtre1
     {
-        margin-bottom: 15px;
-        margin-left: -18px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #Familial
+    {
+        width: 120px;
+        margin-left: 10px;
     }
 
     .info
     {
         width: 350px;
+        padding-top: 10px;
+        padding-bottom: 10px;   
+    }
+
+    #info_icon
+    {
+        margin-top: 10px;
+        margin-left: -10px;
+        margin-right: 10px;
     }
 
     .info p
@@ -775,16 +950,12 @@ main
         height: 100%;
     }
 
-    .titreaside
-    {
-        width: 240px;
-    }
-
     #lpp1
     {
         margin-left: -37px;
         border-radius: 0px;
         width: 100%;
+        padding-right: 37px;
     }
 
     aside
@@ -801,22 +972,18 @@ main
     {   
         background: none;
         padding-right: 0px;
-        margin-left: -21px;  
+        margin-left: -23px;  
         width: 100%;
         height: 100%;
     }
 
-    #titlehebergement
-    {
-        padding-left: 25px;
-    }
 
     .hotelcard
     {
         box-shadow: 1px 1px 15px #DCDCDC;
         width: 300px;
         height: 175px;
-        margin-bottom: 25px;
+        margin-left: 21px;
     }
     
     .hotelcard img
@@ -825,10 +992,13 @@ main
         height: 100px;
     }
 
-    .afficherplus
-{
-    padding
-}
+
+    .hotelcard2
+    {
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+
 
 
     /* SECTION 2 */
@@ -868,39 +1038,11 @@ main
 
     }
 
-.apropos
+    .apropos
 {
     margin-left: 0px;
 }
 
 
 
-
-
-
-    
-
-
-
-    
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
