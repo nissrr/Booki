@@ -17,7 +17,7 @@
     font-style: normal;
 }
 
-/******/
+/*** BODY ***/
 
 body
 {
@@ -47,14 +47,13 @@ img
 {
     display: flex;
     justify-content: space-between;  
+    align-items: center;
 }
 
 .navigation img
 {
     width: 90px;
     height: 45px;
-    padding-top: 35px;
-    padding-left: 15px;
 }
 
 .navigation ul
@@ -62,11 +61,19 @@ img
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: space-between;
+    width: 250px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation li
 {
-    margin: 25px;
+    justify-content: space-between;
+    width: 130px;
+    text-align: center;
+    padding-top: 38px;
 }
 
 .navigation li a
@@ -75,11 +82,11 @@ img
     color: black;
 }
 
-.navigation li a:hover
+.navigation li:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 37px;
+    padding-top: 35px;
 }
 
 .titresect h1
@@ -87,7 +94,6 @@ img
     font-weight: bolder;
     font-size: 20px;
     text-align: left;
-    padding-top: 7px;
     font-family: 'ralewaysemibold';
 }
 
@@ -126,13 +132,12 @@ img
     display: none;
 }
 
-
 #recherche2
 {
     font-family: 'ralewaysemibold';
     padding-left: 15px;
     width: 230px; 
-    height: 44.5px;
+    height: 44px;
     font-size: 18px;
 }
 
@@ -150,10 +155,9 @@ img
     padding-top: 30px;
     position: relative;
     font-family: 'ralewaysemibold';
-    margin-right: -50px;
 }
 
-.filtrereponsive
+.filtreresponsive
 {
     display: flex;
     flex-direction: row;
@@ -344,7 +348,7 @@ main
 {
     font-family: 'ralewaysemibold';
     padding-left: 3%;
-    padding-top: 8%;
+    margin-top: 8%;
 }
 
 /*------LES PLUS POPULAIRES------*/
@@ -357,9 +361,7 @@ main
     display: flex;
     flex-direction: column;
     padding-right: 42px;
-    justify-content: space-around;
-
-    
+    justify-content: space-around;    
 }
 
 .titreaside
@@ -391,12 +393,6 @@ main
     margin-left: 9%;
 }
 
-.hotelcard2 a
-{
-    text-decoration: none;
-    color: black;
-}
-
 .hotelcard2 h2
 {
     position: relative;
@@ -404,6 +400,12 @@ main
     bottom: 140px;
     font-size: 16px;
     padding-left: 160px;
+}
+
+.hotelcard2 a
+{
+    text-decoration: none;
+    color: black;
 }
 
 .hotelcard2 p
@@ -488,6 +490,8 @@ main
     font-size: 16px;
 }
 
+/* FORT DE POMEGUE + FRIOUL */
+
 .activites2
 {
     display: flex;
@@ -495,8 +499,6 @@ main
     width: 25%;
     justify-content: space-between;
 }
-
-/* FORT DE POMEGUES */
 
 .fort
 {
@@ -519,8 +521,6 @@ main
     margin-left: 20px;
     font-size: 16px;
 }
-
-/* Frioul */
 
 .frioul
 {
@@ -550,9 +550,7 @@ main
 {
     border-radius: 15px;
     box-shadow: 1px 1px 15px #DCDCDC;
-    width: 25%;
-
-    
+    width: 25%;    
 }
 
 .calanques img
@@ -570,6 +568,8 @@ main
     font-size: 16px;
 }
 
+/* Notre dame de la garde + Parc */
+
 .activites3
 {
     display: flex;
@@ -578,13 +578,11 @@ main
     justify-content: space-between;
 }
 
-/* Notre dame de la garde */
-
 .notredame
 {
     border-radius: 15px;
     box-shadow: 1px 1px 15px #DCDCDC;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
     
 }
 
@@ -602,8 +600,6 @@ main
     margin-left: 20px;
     font-size: 16px;
 }
-
-/* Parc longchamp */
 
 .parc
 {
@@ -672,7 +668,7 @@ main
 
 
 
-
+/*----- MEDIA QUERIES -----*/
 
 
 
@@ -848,30 +844,34 @@ main
 
     .navigation img
     {
-        padding-left: 110px;
         width: 110px;
-        margin-bottom: -30px;
-    }
-
-
-    .navigation li 
-    {
-        width: 100%;
-        margin-bottom: -7px;
-    }
-
-    .navigation li a:hover
-    {
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-        padding-bottom: 10px;
+        padding-top: 30px;
     }
 
     .navigation ul
     {
-        border-bottom: 3px solid #EFEFEF;
         padding-bottom: 17px;
         margin-left: -22px;
+        width: 370px;
+        height: initial;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+
+    .navigation li 
+    {
+        width: 186px;
+        text-align: center;
+        border-bottom: 3px solid #EFEFEF;
+        padding-bottom: 15px;
+        padding-top: initial;
+    }
+
+    .navigation li:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-top: initial;
     }
 
     .titresect
@@ -898,7 +898,7 @@ main
         width: min-content;
         position: relative;
         left: 260px;
-        bottom: 52px;
+        bottom: 51px;
         font-size: 17px;
         padding: 17px;
         border-radius: 15px;
@@ -967,7 +967,6 @@ main
     .hotels, .hotels2
     {
         flex-direction: column;
-        align-items: center;
     }
 
     #Hébergements
@@ -984,6 +983,7 @@ main
         box-shadow: 1px 1px 15px #DCDCDC;
         width: 300px;
         height: 175px;
+        margin-left: 21px;
     }
     
     .hotelcard img
@@ -1033,15 +1033,13 @@ main
     {
         flex-direction:column;
         padding-left: 23px;
-        margin-bottom: -9px;
         margin-top: 20px;
-
     }
 
     .apropos
-{
-    margin-left: 0px;
-}
+    {
+        margin-left: 0px;
+    }
 
 
 
